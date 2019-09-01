@@ -1,1 +1,28 @@
 # heroku
+
+
+first create the server.js file
+then install any modules 
+then create a package.json file and add this
+{
+  "name": "two",
+  "description": "Our sample Node to Heroku app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "upper-case": "^1.1.3"
+  }
+}
+add .gitignore
+git init
+
+// heroku login is must
+
+git add .
+git commit -m "hi"
+
+heroku create
+git push heroku master
+
